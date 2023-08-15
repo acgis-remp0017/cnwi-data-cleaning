@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang=en_CA>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <title>Newfoundland &ndash; Alan Rempel</title>
+        <link rel=stylesheet href=/style.css>
+    </head>
+    <body>
+        <main>
+            
+<header>
+    <nav>
+        
+        <a href=https:&#x2F;&#x2F;alanrempel.ca&#x2F;>CNWI Data Cleaning Project</a>
+    </nav>
+</header>
+<article>
+    <header><h1>Newfoundland</h1></header>
+    <p>The Newfoundland data consists of seven shapefiles and one Excel
+spreadsheet. The data was collected in 2005 at various sites on
+the Avalon Peninsula (St John’s area).</p>
+<p>The main challenge with this dataset was that these
+shapefiles had some duplicate data between them:</p>
+<ul>
+<li>Some points, as identified by geometry or by the ‘Site’
+attribute, were found in multiple shapefiles; other in only
+one.</li>
+<li>The attributes were mostly consistent: if the ‘Date’ attribute
+for a certain point was ‘2005-08-10’, for example, in one
+shapefile, it was the same in the others.</li>
+<li>On the other hand, some attributes were inconsistent. In
+particular, the ‘Class’ and ‘Comment’ attributes sometimes had
+different values in different files for the same point.</li>
+</ul>
+<p>The inconsistency with the ‘Class’ attribute was the real
+problem. In the end, several points could not be used because of
+this ambiguity.</p>
+
+    <footer>
+        <nav class=prevnext>
+            
+            <a rel=prev href=https:&#x2F;&#x2F;alanrempel.ca&#x2F;introduction&#x2F;>Previous: Introduction</a>
+            
+            
+            <a rel=next href=https:&#x2F;&#x2F;alanrempel.ca&#x2F;labrador&#x2F;>Next: Labrador</a>
+            
+        </nav>
+    </footer>
+</article>
+
+        </main>
+    </body>
+</html>

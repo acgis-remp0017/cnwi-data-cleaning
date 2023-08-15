@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{%block title%}{{page.title}}{% endblock title%}
+{%block content%}
+<header>
+    <nav>
+        {% set section = get_section(path="_index.md")%}
+        <a href={{section.permalink}}>{{section.title}}</a>
+    </nav>
+</header>
+<article>
+    <header><h1>{{page.title}}</h1></header>
+    {{page.content|safe}}
+    <footer>
+        <nav class=prevnext>
+            {% if page.lower %}
+            <a rel=prev href={{page.lower.permalink}}>Previous: {{page.lower.title}}</a>
+            {% endif %}
+            {% if page.higher %}
+            <a rel=next href={{page.higher.permalink}}>Next: {{page.higher.title}}</a>
+            {% endif %}
+        </nav>
+    </footer>
+</article>
+{%endblock content%}
