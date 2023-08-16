@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 Allow: /
-Sitemap: https://alanrempel.ca/sitemap.xml
+Sitemap: https://acgis-remp0017.github.io/cnwi-data-cleaning/sitemap.xml

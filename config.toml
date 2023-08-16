@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://alanrempel.ca"
+base_url = "https://acgis-remp0017.github.io/cnwi-data-cleaning"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
