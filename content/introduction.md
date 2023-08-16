@@ -17,6 +17,8 @@ came along with the field data; these reports have been very
 helpful to me, as they provided important context and gave some
 clues about what field data to look for.
 
+This data is quite valuable to the Canadian Wildlife Service. It was and is costly to undertake a field expedition like the ones that these datasets came from, so it is desirable to make as much use of this field data as possible. Moreover, historical data like this cannot be replaced, because the landscapes that were visited have likely changed in the meantime. In the case of the Newfoundland project, part of the larger purpose was to be able to see how wetlands were being affected by encroaching suburbs in the vicinity of St John’s.
+
 ## Deliverables
 
 * A file geodatabase with feature classes containing the cleaned

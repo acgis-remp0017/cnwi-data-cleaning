@@ -5,9 +5,8 @@ weight = 2
 
 In general, my workflow followed these major steps:
 
-1. Identify and locate the data to be cleaned. (This wasn't
-   always straightforward &ndash; the Labrador folder structure
-   in particular was a bit complicated.)
+1. Read the report accompanying the data, noting especially the context in which the data was collected, the number of datasets collected, when and how they were collected, and the number of sites in each dataset. This told me what to look for when identifying the data itself. 
+2. Discern which files contain the field data, and if multiple similar files are present, which ones are most suitable. For example, in the case of the 1993 Labrador data, there was one file (actually several files containing identical data) that had all the field data, and another that had only
 2. Check if it has a (sensible) spatial reference. Display it on
    a map in ArcGIS Pro; see if it shows up in the expected
    location.
@@ -37,9 +36,11 @@ selecting features that matched my criteria (e.g. has a usable
 'class' attribute).
 
 At first I had expected to do more of this work in ArcGIS Pro,
-perhaps automating workflows with ModelBuilder, but this
-approach turned out not really to be workable and of limited
-benefit. Moreover, ArcGIS Pro's tools for working with
+perhaps automating workflows with ModelBuilder, but because the
+datasets each had unique characteristics and challenges, this
+approach turned out not really to be workable. The small size of
+the datasets also limited the benefit of automating things to
+this degree. Moreover, ArcGIS Pro's tools for working with
 tabular data (as opposed to spatial operations) are sort of
 limited; I experimented in rectifying this by creating my own
 geoprocessing tool, but in the end I used Pandas more because
