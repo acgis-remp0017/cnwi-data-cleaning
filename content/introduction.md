@@ -3,7 +3,7 @@ title = "Introduction"
 weight = 0
 +++
 
-The goal of my project is to clean up some data about wetlands
+The goal of my project was to clean up some data about wetlands
 that was collected 18-30 years ago
 so that it can be added to the Canadian National Wetlands
 Inventory (CNWI).
@@ -27,3 +27,5 @@ clues about what field data to look for.
 * A report describing the processes I used and challenges I came
   across
 * A geoprocessing tool that I created to help me in my work
+* Any images I found alongside the data that were of sufficient
+  quality to be useful in the future
