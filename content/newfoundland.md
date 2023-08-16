@@ -7,6 +7,17 @@ The Newfoundland data consists of seven shapefiles and one Excel
 spreadsheet. The data was collected in 2005 at various sites on
 the Avalon Peninsula (St John's area).
 
+<figure>
+
+<figcaption>Overview of classified wetland points &ndash;
+Avalon Peninsula</figcaption>
+
+<img alt="A map depicting 41 points upon the Avalon peninsula,
+symbolized by wetland class, with satellite image basemap."
+src='../NF.jpg' width=874 height=1240>
+
+</figure>
+
 The main challenge with this dataset was that these
 shapefiles had some duplicate data between them:
 
@@ -23,3 +34,9 @@ shapefiles had some duplicate data between them:
 The inconsistency with the 'Class' attribute was the real
 problem. In the end, several points could not be used because of
 this ambiguity.
+
+After combining the information from the various source files
+and filtering out points with inconsistent or incomplete
+attributes, 41 of the original 107 points remained; these are
+depicted in the map above, along with the points that could not
+be used in a ghostly colour.
