@@ -37,11 +37,9 @@ selecting features that matched my criteria (e.g. has a usable
 'class' attribute).
 
 At first I had expected to do more of this work in ArcGIS Pro,
-perhaps automating workflows with ModelBuilder, but because the
-datasets each had unique characteristics and challenges, this
-approach turned out not really to be workable. The small size of
-the datasets also limited the benefit of automating things to
-this degree. Moreover, ArcGIS Pro's tools for working with
+perhaps automating workflows with ModelBuilder, but this
+approach turned out not really to be workable and of limited
+benefit. Moreover, ArcGIS Pro's tools for working with
 tabular data (as opposed to spatial operations) are sort of
 limited; I experimented in rectifying this by creating my own
 geoprocessing tool, but in the end I used Pandas more because

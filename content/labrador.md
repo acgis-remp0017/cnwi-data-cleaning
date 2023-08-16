@@ -30,7 +30,10 @@ classified as 'not wetland').
 
 - Some of the classes in the 1993 data were a little mysterious, e.g. awsswamp – clearly a swamp, but does “aws” signify anything with regard to how it should be crosswalked? It turned out not to (it stands for “alder and willow”). 
 
-- Again in the 1993 data, some of the points had dates (well, just one date) and data on soil composition, but for most points these attributes were null. Could this signify anything? It wasn’t clear why these attributes were only present for some features, but those who used the data originally were content to use many points that lacked these attributes to classify a Landsat image, so it probably does not signify underlying issues with the quality of the data. 
+- Again in the 1993 data, some of the points had dates (well,
+  just one date) and data on soil composition, but for most
+  points these attributes were null. These points were used in
+  the original classification project, so it probably does not signify underlying issues with the quality of the data. 
 
 - Alongside the shapefiles containing ground-truth data were
   MapInfo files (which I didn't recognize when I first saw
