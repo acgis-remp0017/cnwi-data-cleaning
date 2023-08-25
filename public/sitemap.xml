@@ -4,7 +4,10 @@
         <loc>https://acgis-remp0017.github.io/cnwi-data-cleaning/</loc>
     </url>
     <url>
-        <loc>https://acgis-remp0017.github.io/cnwi-data-cleaning/geoprocessing-tool/</loc>
+        <loc>https://acgis-remp0017.github.io/cnwi-data-cleaning/challenges/</loc>
+    </url>
+    <url>
+        <loc>https://acgis-remp0017.github.io/cnwi-data-cleaning/conclusion/</loc>
     </url>
     <url>
         <loc>https://acgis-remp0017.github.io/cnwi-data-cleaning/introduction/</loc>
@@ -17,5 +20,8 @@
     </url>
     <url>
         <loc>https://acgis-remp0017.github.io/cnwi-data-cleaning/process/</loc>
+    </url>
+    <url>
+        <loc>https://acgis-remp0017.github.io/cnwi-data-cleaning/results/</loc>
     </url>
 </urlset>

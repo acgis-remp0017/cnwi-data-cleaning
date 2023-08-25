@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <title>Labrador &ndash; Alan Rempel</title>
         <link rel=stylesheet href=https://acgis-remp0017.github.io/cnwi-data-cleaning/style.css>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
     </head>
     <body>
         <main>
@@ -18,39 +19,18 @@
 <article>
     <header><h1>Labrador</h1></header>
     <p>The Labrador data came from three different field expeditions,
-in 1993, 2004, and 2005. The 2004 and 2005 data has
+in 1993, 2004, and 2005, in the Minipi Lake and Lake Melville regions. The 2004 and 2005 data has
 polygon geometry, but I have depicted all the features here as
 points so that they may be more easily discerned at this scale.</p>
-<p>In this case the data was not so complicated as with
-Newfoundland. It was easy to
-determine that I had all the ground-truth data mentioned in the
-reports that accompanied these datasets.</p>
+<p>This data caused me a number of perplexities: different coordinate systems for the same data, survey sites present in both point and polygon geometry, and many 1993 points with positional errors, not all of which could be corrected definitively.</p>
 <figure>
 <figcaption>Overview of classified wetland points &ndash;
 Minipi region</figcaption>
 <img src='../LB.jpg' width=874 height=1240>
 </figure>
-<p>In total, these datasets yielded 116 classified points out of
-131 total (that is, leaving out those with no class or
-classified as ‘not wetland’).</p>
-<h2 id="challenges-encountered">Challenges encountered</h2>
-<ul>
-<li>
-<p>Some of the classes in the 1993 data were a little mysterious, e.g. awsswamp – clearly a swamp, but does “aws” signify anything with regard to how it should be crosswalked? It turned out not to (it stands for “alder and willow”). </p>
-</li>
-<li>
-<p>Again in the 1993 data, some of the points had dates (well, just one date) and data on soil composition, but for most points these attributes were null. Could this signify anything? It wasn’t clear why these attributes were only present for some features, but those who used the data originally were content to use many points that lacked these attributes to classify a Landsat image, so it probably does not signify underlying issues with the quality of the data. </p>
-</li>
-<li>
-<p>Alongside the shapefiles containing ground-truth data were
-MapInfo files (which I didn’t recognize when I first saw
-them), some of which had filenames similar to those of the
-shapefiles containing field data. I used a tool from the open-source <a href="https://gdal.org/">GDAL
-project</a> to convert these to shapefiles and
-determined that they all either duplicated shapefiles that
-I had already discovered or did not contain ground-truth data.</p>
-</li>
-</ul>
+<p>In total, these datasets yielded 73 classified points out of
+131 total. I did not crosswalk points with no class, that were classified as
+‘not wetland’, and those whose positional accuracy could not be confirmed.</p>
 
     <footer>
         <nav class=prevnext>
@@ -58,7 +38,7 @@ I had already discovered or did not contain ground-truth data.</p>
             <a rel=prev href=https:&#x2F;&#x2F;acgis-remp0017.github.io&#x2F;cnwi-data-cleaning&#x2F;newfoundland&#x2F;>Previous: Newfoundland</a>
             
             
-            <a rel=next href=https:&#x2F;&#x2F;acgis-remp0017.github.io&#x2F;cnwi-data-cleaning&#x2F;geoprocessing-tool&#x2F;>Next: Geoprocessing Tool</a>
+            <a rel=next href=https:&#x2F;&#x2F;acgis-remp0017.github.io&#x2F;cnwi-data-cleaning&#x2F;conclusion&#x2F;>Next: Conclusion</a>
             
         </nav>
     </footer>

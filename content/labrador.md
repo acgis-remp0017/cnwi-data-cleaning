@@ -4,14 +4,11 @@ weight = 6
 +++
 
 The Labrador data came from three different field expeditions,
-in 1993, 2004, and 2005. The 2004 and 2005 data has
+in 1993, 2004, and 2005, in the Minipi Lake and Lake Melville regions. The 2004 and 2005 data has
 polygon geometry, but I have depicted all the features here as
 points so that they may be more easily discerned at this scale.
 
-In this case the data was not so complicated as with
-Newfoundland. It was easy to
-determine that I had all the ground-truth data mentioned in the
-reports that accompanied these datasets.
+This data caused me a number of perplexities: different coordinate systems for the same data, survey sites present in both point and polygon geometry, and many 1993 points with positional errors, not all of which could be corrected definitively.
 
 <figure>
 
@@ -22,20 +19,6 @@ Minipi region</figcaption>
 
 </figure>
 
-In total, these datasets yielded 116 classified points out of
-131 total (that is, leaving out those with no class or
-classified as 'not wetland').
-
-## Challenges encountered
-
-- Some of the classes in the 1993 data were a little mysterious, e.g. awsswamp – clearly a swamp, but does “aws” signify anything with regard to how it should be crosswalked? It turned out not to (it stands for “alder and willow”). 
-
-- Again in the 1993 data, some of the points had dates (well, just one date) and data on soil composition, but for most points these attributes were null. Could this signify anything? It wasn’t clear why these attributes were only present for some features, but those who used the data originally were content to use many points that lacked these attributes to classify a Landsat image, so it probably does not signify underlying issues with the quality of the data. 
-
-- Alongside the shapefiles containing ground-truth data were
-  MapInfo files (which I didn't recognize when I first saw
-  them), some of which had filenames similar to those of the
-  shapefiles containing field data. I used a tool from the open-source [GDAL
-  project](https://gdal.org/) to convert these to shapefiles and
-  determined that they all either duplicated shapefiles that
-  I had already discovered or did not contain ground-truth data.
+In total, these datasets yielded 73 classified points out of
+131 total. I did not crosswalk points with no class, that were classified as
+'not wetland', and those whose positional accuracy could not be confirmed.

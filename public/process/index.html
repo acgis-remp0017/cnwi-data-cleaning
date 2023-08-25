@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <title>Workflow &ndash; Alan Rempel</title>
         <link rel=stylesheet href=https://acgis-remp0017.github.io/cnwi-data-cleaning/style.css>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
     </head>
     <body>
         <main>
@@ -20,15 +21,12 @@
     <p>In general, my workflow followed these major steps:</p>
 <ol>
 <li>Read the report accompanying the data, noting especially the context in which the data was collected, the number of datasets collected, when and how they were collected, and the number of sites in each dataset. This told me what to look for when identifying the data itself. </li>
-<li>Discern which files contain the field data, and if multiple similar files are present, which ones are most suitable. For example, in the case of the 1993 Labrador data, there was one file (actually several files containing identical data) that had all the field data, and another that had only</li>
-<li>Check if it has a (sensible) spatial reference. Display it on
-a map in ArcGIS Pro; see if it shows up in the expected
-location.</li>
+<li>Discern which files contain the field data. If multiple similar files are present, determine whether they contain they same or difference features, attribute schema, attribute values, etc.</li>
+<li>Check if the dataset has a (sensible) spatial reference.</li>
 <li>Check for any oddities or inconsistencies in the geometry or
-attributes. Flag any features that appear dodgy, possibly
+attributes. Flag any features that raise concern, possibly
 omitting them from the final database.</li>
-<li>Locate any pictures taken in the field that came along with the dataset; find
-the correspondence between pictures and features.</li>
+<li>Locate any pictures taken in the field that came along with the dataset; attach the pictures to the corresponding features as geodatabase attachments.</li>
 <li>Select those features that have a wetland class attribute
 that can be mapped onto the
 <abbr title="Canadian National Wetlands Inventory">CNWI</abbr>
@@ -36,9 +34,7 @@ classification system and crosswalk them into the CNWI
 system: that is, reclassify them from their source
 classification to the corresponding classification in the
 CNWI system, and fill in the other CNWI attributes where
-possible. For a lot of the points, the wetland class was the
-only useful attribute present. Where pictures were present,
-these were also attached.</li>
+possible.</li>
 </ol>
 <p>I used the Python libraries Pandas and GeoPandas for much of my
 data analysis and transformation. This includes checking the
@@ -53,7 +49,8 @@ perhaps automating workflows with ModelBuilder, but because the
 datasets each had unique characteristics and challenges, this
 approach turned out not really to be workable. The small size of
 the datasets also limited the benefit of automating things to
-this degree. Moreover, ArcGIS Pro’s tools for working with
+this degree.</p>
+<p>Moreover, ArcGIS Pro’s tools for working with
 tabular data (as opposed to spatial operations) are sort of
 limited; I experimented in rectifying this by creating my own
 geoprocessing tool, but in the end I used Pandas more because
@@ -62,10 +59,10 @@ its tools were faster and more useful for my purposes.</p>
     <footer>
         <nav class=prevnext>
             
-            <a rel=prev href=https:&#x2F;&#x2F;acgis-remp0017.github.io&#x2F;cnwi-data-cleaning&#x2F;introduction&#x2F;>Previous: Introduction</a>
+            <a rel=prev href=https:&#x2F;&#x2F;acgis-remp0017.github.io&#x2F;cnwi-data-cleaning&#x2F;results&#x2F;>Previous: Results</a>
             
             
-            <a rel=next href=https:&#x2F;&#x2F;acgis-remp0017.github.io&#x2F;cnwi-data-cleaning&#x2F;newfoundland&#x2F;>Next: Newfoundland</a>
+            <a rel=next href=https:&#x2F;&#x2F;acgis-remp0017.github.io&#x2F;cnwi-data-cleaning&#x2F;challenges&#x2F;>Next: Challenges encountered</a>
             
         </nav>
     </footer>
